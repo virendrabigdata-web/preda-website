@@ -17,14 +17,13 @@
         .logo-container { display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none; color: white; }
         .logo-box { width: 35px; height: 35px; background: #ffcc00; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #003399; font-size: 1.3rem; border: 2px solid #fff; }
 
-        /* Hero Section */
+        /* Hero Section (Home) */
         .hero { background: linear-gradient(rgba(0,51,153,0.85), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1350&q=80'); 
                 height: 70vh; background-size: cover; background-position: center; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
         .hero h1 { font-size: 3.5rem; margin-bottom: 15px; letter-spacing: 1px; }
         .hero p { font-size: 1.2rem; max-width: 700px; }
         .btn { background: #ffcc00; color: #333; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 25px; transition: 0.3s; display: inline-block; border: none; cursor: pointer; font-size: 1rem; }
         .btn:hover { background: #e6b800; transform: translateY(-2px); }
-        .btn:disabled { background: #ccc; cursor: not-allowed; }
 
         /* Section Containers */
         section { padding: 80px 10%; }
@@ -39,17 +38,17 @@
         .service-info { padding: 25px; text-align: center; flex-grow: 1; }
         .service-info h3 { margin-bottom: 12px; color: #003399; font-size: 1.4rem; }
 
-        /* About Us Styles */
-        .about-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        .about-text h3 { color: #003399; margin-bottom: 15px; font-size: 1.8rem; }
-        .about-text p { margin-bottom: 20px; color: #555; font-size: 1.05rem; }
-        .about-img img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-
         /* Process Section */
         #process { background: #f0f4ff; }
         .process-container { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-top: 40px; }
         .process-step { flex: 1; min-width: 200px; text-align: center; padding: 15px; }
         .step-number { width: 50px; height: 50px; background: #003399; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; font-weight: bold; font-size: 1.2rem; border: 3px solid #ffcc00; }
+
+        /* About Us Styles */
+        .about-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .about-text h3 { color: #003399; margin-bottom: 15px; font-size: 1.8rem; }
+        .about-text p { margin-bottom: 20px; color: #555; font-size: 1.05rem; }
+        .about-img img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
 
         /* Contact Section */
         #contact { background: #f0f4ff; }
@@ -122,20 +121,6 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="section-title"><h2>About Us</h2></div>
-        <div class="about-wrapper">
-            <div class="about-text">
-                <h3>Innovation Meets Reliability</h3>
-                <p>At <strong>Preda Info Tech</strong>, based in Ganga Glitz, Undri, we don't just build websites; we create digital ecosystems. We bridge the gap between complex data and user-friendly interfaces.</p>
-                <p>Our mission is to empower organizations with the tools they need to thrive in a data-heavy landscape. From school management to corporate analytics, we deliver excellence.</p>
-            </div>
-            <div class="about-img">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Team working">
-            </div>
-        </div>
-    </section>
-
     <section id="process">
         <div class="section-title"><h2>How We Work</h2></div>
         
@@ -147,11 +132,25 @@
         </div>
     </section>
 
+    <section id="about">
+        <div class="section-title"><h2>About Us</h2></div>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h3>Innovation Meets Reliability</h3>
+                <p>At <strong>Preda Info Tech</strong>, based in Ganga Glitz, Undri, we create digital ecosystems. We bridge the gap between complex data and user-friendly interfaces.</p>
+                <p>Our mission is to empower organizations with the tools they need to thrive in a data-heavy landscape. From school management to corporate analytics, we deliver excellence.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Team working">
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="contact-container">
             <div>
                 <h3>Connect With Us</h3>
-                <p style="margin: 15px 0;"><strong>📍 Location:</strong> Ganga Glitz, Undri,<br>Pune 411060</p>
+                <p style="margin: 15px 0;"><strong>📍 Location:</strong> Ganga Glitz, Undri, Pune, India - 411060</p>
                 <p style="margin: 15px 0;"><strong>✉️ Email:</strong> predainfotech@gmail.com</p>
                 <p style="margin: 15px 0;"><strong>⏰ Hours:</strong> Mon - Fri: 9:00 AM - 6:00 PM</p>
             </div>
@@ -193,7 +192,7 @@
                     headers: { 'Accept': 'application/json' }
                 });
                 if (response.ok) {
-                    alert("✅ Success! Your message has been sent to Preda Info Tech. Check your email for a confirmation.");
+                    alert("✅ Success! Your message has been sent to Preda Info Tech.");
                     form.reset(); 
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 } else {
